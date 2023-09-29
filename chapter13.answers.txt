@@ -1,0 +1,29 @@
+
+
+/*********************************************
+karakostas Zach
+
+Question 2: 
+Using -m (display memory totals in megabytes)
+total: 7960M
+used: 585M
+free: 6953 M
+
+Using -h --si
+	        total        used        free      shared  buff/cache   available
+Mem:           8.0G        585M        7.0G        2.0M        422M        7.1G
+Swap:          257M        126M        131M
+
+Being a little disoriented, I did not know what to expect, so my intuition was way off these numbers.
+
+Question 4: The totals change when I run the program and they return almost back to how they used to be once I kill the process. I tried different amounts and this pattern continues on. Once i try too large an amount of memory, I get a message “Memory allocation failed: Cannot allocate memory”.
+
+Question 6:As a student struggling with coding and finding Mobaxterm less user-friendly, three primary challenges stand out. Firstly, navigating the terminal environment can be intimidating, making it difficult to understand how to run commands and manage files effectively. Secondly, memory management poses a significant hurdle, with issues like memory leaks and segmentation faults requiring complex debugging. Lastly, interpreting compiler errors and warnings can be challenging, particularly when error messages are unclear or unfamiliar. These challenges collectively make up for the challenges I faced in making this program
+
+Question 7: I see lots of numbers and letters and I am getting overwhelmed by them. I may not be able to give an exact number of how many different entities make up a modern address space, but I can say that they are numerous and way more complex than the simple conception of code/stack/heap.Running -x, I see [Addresses, size in Kbytes, RSS, Dirty Mode and Mapping] some of which I am unfamiliar with and go beyond our simple concept. Then 
+Running with -p i see the sizes in Kbytes as well as full path to files in the mapping column (/home/karakostasz/csc425/csc425_assigmory-user).  
+Running with the  -XX option, I’m seeing the following,  [ Address, Perm, Offset, Device,  Inode, Size KernelPageSize, MMUPageSize, Rss, Pss Shared_Clean, Shared_Dirty, Private_Clean, Private_Dirty, Referenced, Anonymous, LazyFree, AnonHugePages, ShmemPmdMapped, FilePmdapped, Shared_Hugetlb, Private_Hugetlb Swap, SwapPss, Locked, THPeligible, VmFlags Mapping] that seem to play their role.
+
+Question 8: I run the program with different amounts of used memory and run pmap on it, I see that the is a linear relationship, When I allocate more memory to the program, I see a larger memory footprint once I run pmap, values change, and they become larger. In other words, each time, the values would reflect the current memory usage of the program. It matches my expectation and It allows you to see how different memory regions grow and shrink as the program runs and allocates or deallocates memory.
+*********************************************/
+
